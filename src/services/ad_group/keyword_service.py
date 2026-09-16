@@ -4,20 +4,20 @@ from typing import Any, Awaitable, Callable, Dict, List, Optional
 
 from fastmcp import Context, FastMCP
 from google.ads.googleads.errors import GoogleAdsException
-from google.ads.googleads.v24.common.types.criteria import KeywordInfo
-from google.ads.googleads.v24.enums.types.ad_group_criterion_status import (
+from google.ads.googleads.v23.common.types.criteria import KeywordInfo
+from google.ads.googleads.v23.enums.types.ad_group_criterion_status import (
     AdGroupCriterionStatusEnum,
 )
-from google.ads.googleads.v24.enums.types.keyword_match_type import (
+from google.ads.googleads.v23.enums.types.keyword_match_type import (
     KeywordMatchTypeEnum,
 )
-from google.ads.googleads.v24.resources.types.ad_group_criterion import (
+from google.ads.googleads.v23.resources.types.ad_group_criterion import (
     AdGroupCriterion,
 )
-from google.ads.googleads.v24.services.services.ad_group_criterion_service import (
+from google.ads.googleads.v23.services.services.ad_group_criterion_service import (
     AdGroupCriterionServiceClient,
 )
-from google.ads.googleads.v24.services.types.ad_group_criterion_service import (
+from google.ads.googleads.v23.services.types.ad_group_criterion_service import (
     AdGroupCriterionOperation,
     MutateAdGroupCriteriaRequest,
     MutateAdGroupCriteriaResponse,

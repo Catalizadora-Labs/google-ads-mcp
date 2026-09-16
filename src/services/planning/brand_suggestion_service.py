@@ -7,10 +7,10 @@ Brand suggestions help advertisers find relevant brands for their campaigns.
 from typing import Any, List, Optional
 
 from fastmcp import FastMCP
-from google.ads.googleads.v24.services.services.brand_suggestion_service import (
+from google.ads.googleads.v23.services.services.brand_suggestion_service import (
     BrandSuggestionServiceClient,
 )
-from google.ads.googleads.v24.services.types.brand_suggestion_service import (
+from google.ads.googleads.v23.services.types.brand_suggestion_service import (
     SuggestBrandsRequest,
     SuggestBrandsResponse,
 )

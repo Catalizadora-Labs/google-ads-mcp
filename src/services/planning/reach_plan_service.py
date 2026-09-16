@@ -4,10 +4,10 @@ from typing import Any, Awaitable, Callable, Dict, List, Optional
 
 from fastmcp import Context, FastMCP
 from google.ads.googleads.errors import GoogleAdsException
-from google.ads.googleads.v24.services.services.reach_plan_service import (
+from google.ads.googleads.v23.services.services.reach_plan_service import (
     ReachPlanServiceClient,
 )
-from google.ads.googleads.v24.services.types.reach_plan_service import (
+from google.ads.googleads.v23.services.types.reach_plan_service import (
     ListPlannableLocationsRequest,
     ListPlannableLocationsResponse,
     ListPlannableProductsRequest,

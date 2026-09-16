@@ -4,26 +4,26 @@ from typing import Any, Awaitable, Callable, Dict, List, Optional
 
 from fastmcp import Context, FastMCP
 from google.ads.googleads.errors import GoogleAdsException
-from google.ads.googleads.v24.common.types.criteria import (
+from google.ads.googleads.v23.common.types.criteria import (
     DeviceInfo,
     HotelCheckInDayInfo,
     HotelDateSelectionTypeInfo,
 )
-from google.ads.googleads.v24.enums.types.day_of_week import DayOfWeekEnum
-from google.ads.googleads.v24.enums.types.device import DeviceEnum
-from google.ads.googleads.v24.enums.types.hotel_date_selection_type import (
+from google.ads.googleads.v23.enums.types.day_of_week import DayOfWeekEnum
+from google.ads.googleads.v23.enums.types.device import DeviceEnum
+from google.ads.googleads.v23.enums.types.hotel_date_selection_type import (
     HotelDateSelectionTypeEnum,
 )
-from google.ads.googleads.v24.resources.types.ad_group_bid_modifier import (
+from google.ads.googleads.v23.resources.types.ad_group_bid_modifier import (
     AdGroupBidModifier,
 )
-from google.ads.googleads.v24.services.services.ad_group_bid_modifier_service import (
+from google.ads.googleads.v23.services.services.ad_group_bid_modifier_service import (
     AdGroupBidModifierServiceClient,
 )
-from google.ads.googleads.v24.services.services.google_ads_service import (
+from google.ads.googleads.v23.services.services.google_ads_service import (
     GoogleAdsServiceClient,
 )
-from google.ads.googleads.v24.services.types.ad_group_bid_modifier_service import (
+from google.ads.googleads.v23.services.types.ad_group_bid_modifier_service import (
     AdGroupBidModifierOperation,
     MutateAdGroupBidModifiersRequest,
     MutateAdGroupBidModifiersResponse,

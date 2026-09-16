@@ -3,30 +3,30 @@
 from typing import Any, Dict, List, Optional, Callable, Awaitable
 
 from fastmcp import Context, FastMCP
-from google.ads.googleads.v24.services.services.bidding_data_exclusion_service import (
+from google.ads.googleads.v23.services.services.bidding_data_exclusion_service import (
     BiddingDataExclusionServiceClient,
 )
-from google.ads.googleads.v24.services.types.bidding_data_exclusion_service import (
+from google.ads.googleads.v23.services.types.bidding_data_exclusion_service import (
     MutateBiddingDataExclusionsRequest,
     MutateBiddingDataExclusionsResponse,
     BiddingDataExclusionOperation,
 )
-from google.ads.googleads.v24.resources.types.bidding_data_exclusion import (
+from google.ads.googleads.v23.resources.types.bidding_data_exclusion import (
     BiddingDataExclusion,
 )
-from google.ads.googleads.v24.enums.types.seasonality_event_scope import (
+from google.ads.googleads.v23.enums.types.seasonality_event_scope import (
     SeasonalityEventScopeEnum,
 )
-from google.ads.googleads.v24.enums.types.seasonality_event_status import (
+from google.ads.googleads.v23.enums.types.seasonality_event_status import (
     SeasonalityEventStatusEnum,
 )
-from google.ads.googleads.v24.enums.types.device import DeviceEnum
-from google.ads.googleads.v24.enums.types.advertising_channel_type import (
+from google.ads.googleads.v23.enums.types.device import DeviceEnum
+from google.ads.googleads.v23.enums.types.advertising_channel_type import (
     AdvertisingChannelTypeEnum,
 )
 from google.ads.googleads.errors import GoogleAdsException
 
-from google.ads.googleads.v24.services.services.google_ads_service import (
+from google.ads.googleads.v23.services.services.google_ads_service import (
     GoogleAdsServiceClient,
 )
 from google.protobuf import field_mask_pb2

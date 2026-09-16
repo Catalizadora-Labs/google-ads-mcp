@@ -7,24 +7,24 @@ content insertion in ads based on ad group-specific data.
 from typing import Any, List, Optional
 
 from fastmcp import FastMCP
-from google.ads.googleads.v24.services.services.ad_group_customizer_service import (
+from google.ads.googleads.v23.services.services.ad_group_customizer_service import (
     AdGroupCustomizerServiceClient,
 )
-from google.ads.googleads.v24.services.types.ad_group_customizer_service import (
+from google.ads.googleads.v23.services.types.ad_group_customizer_service import (
     AdGroupCustomizerOperation,
     MutateAdGroupCustomizersRequest,
     MutateAdGroupCustomizersResponse,
 )
-from google.ads.googleads.v24.resources.types.ad_group_customizer import (
+from google.ads.googleads.v23.resources.types.ad_group_customizer import (
     AdGroupCustomizer,
 )
-from google.ads.googleads.v24.enums.types.response_content_type import (
+from google.ads.googleads.v23.enums.types.response_content_type import (
     ResponseContentTypeEnum,
 )
-from google.ads.googleads.v24.enums.types.customizer_attribute_type import (
+from google.ads.googleads.v23.enums.types.customizer_attribute_type import (
     CustomizerAttributeTypeEnum,
 )
-from google.ads.googleads.v24.common.types.customizer_value import CustomizerValue
+from google.ads.googleads.v23.common.types.customizer_value import CustomizerValue
 
 from src.utils import resolve_enum
 from src.sdk_client import get_sdk_client

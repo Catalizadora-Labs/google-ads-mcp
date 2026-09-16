@@ -4,11 +4,11 @@ from typing import Any, Awaitable, Callable, Dict, List, Optional
 
 from fastmcp import Context, FastMCP
 from google.ads.googleads.errors import GoogleAdsException
-from google.ads.googleads.v24.resources.types.customer_label import CustomerLabel
-from google.ads.googleads.v24.services.services.customer_label_service import (
+from google.ads.googleads.v23.resources.types.customer_label import CustomerLabel
+from google.ads.googleads.v23.services.services.customer_label_service import (
     CustomerLabelServiceClient,
 )
-from google.ads.googleads.v24.services.types.customer_label_service import (
+from google.ads.googleads.v23.services.types.customer_label_service import (
     CustomerLabelOperation,
     MutateCustomerLabelsRequest,
     MutateCustomerLabelsResponse,

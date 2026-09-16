@@ -4,17 +4,17 @@ from typing import Any, Awaitable, Callable, Dict, List, Optional
 
 from fastmcp import Context, FastMCP
 from google.ads.googleads.errors import GoogleAdsException
-from google.ads.googleads.v24.enums.types.access_role import AccessRoleEnum
-from google.ads.googleads.v24.resources.types.customer_user_access import (
+from google.ads.googleads.v23.enums.types.access_role import AccessRoleEnum
+from google.ads.googleads.v23.resources.types.customer_user_access import (
     CustomerUserAccess,
 )
-from google.ads.googleads.v24.services.services.customer_user_access_service import (
+from google.ads.googleads.v23.services.services.customer_user_access_service import (
     CustomerUserAccessServiceClient,
 )
-from google.ads.googleads.v24.services.services.google_ads_service import (
+from google.ads.googleads.v23.services.services.google_ads_service import (
     GoogleAdsServiceClient,
 )
-from google.ads.googleads.v24.services.types.customer_user_access_service import (
+from google.ads.googleads.v23.services.types.customer_user_access_service import (
     CustomerUserAccessOperation,
     MutateCustomerUserAccessRequest,
 )

@@ -4,19 +4,19 @@ from typing import Any, Awaitable, Callable, Dict, List, Optional
 
 from fastmcp import Context, FastMCP
 from google.ads.googleads.errors import GoogleAdsException
-from google.ads.googleads.v24.enums.types.campaign_shared_set_status import (
+from google.ads.googleads.v23.enums.types.campaign_shared_set_status import (
     CampaignSharedSetStatusEnum,
 )
-from google.ads.googleads.v24.resources.types.campaign_shared_set import (
+from google.ads.googleads.v23.resources.types.campaign_shared_set import (
     CampaignSharedSet,
 )
-from google.ads.googleads.v24.services.services.campaign_shared_set_service import (
+from google.ads.googleads.v23.services.services.campaign_shared_set_service import (
     CampaignSharedSetServiceClient,
 )
-from google.ads.googleads.v24.services.services.google_ads_service import (
+from google.ads.googleads.v23.services.services.google_ads_service import (
     GoogleAdsServiceClient,
 )
-from google.ads.googleads.v24.services.types.campaign_shared_set_service import (
+from google.ads.googleads.v23.services.types.campaign_shared_set_service import (
     CampaignSharedSetOperation,
     MutateCampaignSharedSetsRequest,
     MutateCampaignSharedSetsResponse,

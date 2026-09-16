@@ -4,21 +4,21 @@ from typing import Any, Awaitable, Callable, Dict, List, Optional
 
 from fastmcp import Context, FastMCP
 from google.ads.googleads.errors import GoogleAdsException
-from google.ads.googleads.v24.common.types.criteria import (
+from google.ads.googleads.v23.common.types.criteria import (
     DeviceInfo,
     KeywordInfo,
     LanguageInfo,
     LocationInfo,
 )
-from google.ads.googleads.v24.enums.types.device import DeviceEnum
-from google.ads.googleads.v24.enums.types.keyword_match_type import KeywordMatchTypeEnum
-from google.ads.googleads.v24.resources.types.campaign_criterion import (
+from google.ads.googleads.v23.enums.types.device import DeviceEnum
+from google.ads.googleads.v23.enums.types.keyword_match_type import KeywordMatchTypeEnum
+from google.ads.googleads.v23.resources.types.campaign_criterion import (
     CampaignCriterion,
 )
-from google.ads.googleads.v24.services.services.campaign_criterion_service import (
+from google.ads.googleads.v23.services.services.campaign_criterion_service import (
     CampaignCriterionServiceClient,
 )
-from google.ads.googleads.v24.services.types.campaign_criterion_service import (
+from google.ads.googleads.v23.services.types.campaign_criterion_service import (
     CampaignCriterionOperation,
     MutateCampaignCriteriaRequest,
     MutateCampaignCriteriaResponse,

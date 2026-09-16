@@ -4,7 +4,7 @@ from typing import Any, Awaitable, Callable, Dict, List, Optional
 
 from fastmcp import Context, FastMCP
 from google.ads.googleads.errors import GoogleAdsException
-from google.ads.googleads.v24.common.types.user_lists import (
+from google.ads.googleads.v23.common.types.user_lists import (
     BasicUserListInfo,
     CrmBasedUserListInfo,
     LogicalUserListInfo,
@@ -12,17 +12,17 @@ from google.ads.googleads.v24.common.types.user_lists import (
     SimilarUserListInfo,
     UserListLogicalRuleInfo,
 )
-from google.ads.googleads.v24.enums.types.user_list_logical_rule_operator import (
+from google.ads.googleads.v23.enums.types.user_list_logical_rule_operator import (
     UserListLogicalRuleOperatorEnum,
 )
-from google.ads.googleads.v24.enums.types.user_list_membership_status import (
+from google.ads.googleads.v23.enums.types.user_list_membership_status import (
     UserListMembershipStatusEnum,
 )
-from google.ads.googleads.v24.resources.types.user_list import UserList
-from google.ads.googleads.v24.services.services.user_list_service import (
+from google.ads.googleads.v23.resources.types.user_list import UserList
+from google.ads.googleads.v23.services.services.user_list_service import (
     UserListServiceClient,
 )
-from google.ads.googleads.v24.services.types.user_list_service import (
+from google.ads.googleads.v23.services.types.user_list_service import (
     MutateUserListsRequest,
     MutateUserListsResponse,
     UserListOperation,
@@ -173,7 +173,7 @@ class UserListService:
             # Create CRM-based user list info
             crm_user_list = CrmBasedUserListInfo()
             # Set upload key type using enum
-            from google.ads.googleads.v24.enums.types.customer_match_upload_key_type import (
+            from google.ads.googleads.v23.enums.types.customer_match_upload_key_type import (
                 CustomerMatchUploadKeyTypeEnum,
             )
 

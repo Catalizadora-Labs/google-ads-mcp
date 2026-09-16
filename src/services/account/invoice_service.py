@@ -4,11 +4,11 @@ from typing import Any, Awaitable, Callable, Dict, List, Optional
 
 from fastmcp import Context, FastMCP
 from google.ads.googleads.errors import GoogleAdsException
-from google.ads.googleads.v24.enums.types.month_of_year import MonthOfYearEnum
-from google.ads.googleads.v24.services.services.invoice_service import (
+from google.ads.googleads.v23.enums.types.month_of_year import MonthOfYearEnum
+from google.ads.googleads.v23.services.services.invoice_service import (
     InvoiceServiceClient,
 )
-from google.ads.googleads.v24.services.types.invoice_service import (
+from google.ads.googleads.v23.services.types.invoice_service import (
     ListInvoicesRequest,
     ListInvoicesResponse,
 )

@@ -4,20 +4,20 @@ from typing import Any, Awaitable, Callable, Dict, List, Optional
 
 from fastmcp import Context, FastMCP
 from google.ads.googleads.errors import GoogleAdsException
-from google.ads.googleads.v24.common.types.criteria import (
+from google.ads.googleads.v23.common.types.criteria import (
     KeywordInfo,
     PlacementInfo,
 )
-from google.ads.googleads.v24.enums.types.criterion_type import CriterionTypeEnum
-from google.ads.googleads.v24.enums.types.keyword_match_type import KeywordMatchTypeEnum
-from google.ads.googleads.v24.resources.types.shared_criterion import SharedCriterion
-from google.ads.googleads.v24.services.services.shared_criterion_service import (
+from google.ads.googleads.v23.enums.types.criterion_type import CriterionTypeEnum
+from google.ads.googleads.v23.enums.types.keyword_match_type import KeywordMatchTypeEnum
+from google.ads.googleads.v23.resources.types.shared_criterion import SharedCriterion
+from google.ads.googleads.v23.services.services.shared_criterion_service import (
     SharedCriterionServiceClient,
 )
-from google.ads.googleads.v24.services.services.google_ads_service import (
+from google.ads.googleads.v23.services.services.google_ads_service import (
     GoogleAdsServiceClient,
 )
-from google.ads.googleads.v24.services.types.shared_criterion_service import (
+from google.ads.googleads.v23.services.types.shared_criterion_service import (
     MutateSharedCriteriaRequest,
     MutateSharedCriteriaResponse,
     SharedCriterionOperation,

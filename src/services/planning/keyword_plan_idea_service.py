@@ -3,10 +3,10 @@
 from typing import Any, Dict, List, Optional, Callable, Awaitable
 
 from fastmcp import Context, FastMCP
-from google.ads.googleads.v24.services.services.keyword_plan_idea_service import (
+from google.ads.googleads.v23.services.services.keyword_plan_idea_service import (
     KeywordPlanIdeaServiceClient,
 )
-from google.ads.googleads.v24.services.types.keyword_plan_idea_service import (
+from google.ads.googleads.v23.services.types.keyword_plan_idea_service import (
     GenerateKeywordIdeasRequest,
     GenerateKeywordIdeaResult,
     KeywordAndUrlSeed,
@@ -14,7 +14,7 @@ from google.ads.googleads.v24.services.types.keyword_plan_idea_service import (
     SiteSeed,
     UrlSeed,
 )
-from google.ads.googleads.v24.enums.types.keyword_plan_network import (
+from google.ads.googleads.v23.enums.types.keyword_plan_network import (
     KeywordPlanNetworkEnum,
 )
 from google.ads.googleads.errors import GoogleAdsException

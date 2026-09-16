@@ -4,16 +4,16 @@ from typing import Any, Awaitable, Callable, Dict, List, Optional
 
 from fastmcp import Context, FastMCP
 from google.ads.googleads.errors import GoogleAdsException
-from google.ads.googleads.v24.enums.types.asset_set_status import AssetSetStatusEnum
-from google.ads.googleads.v24.enums.types.asset_set_type import AssetSetTypeEnum
-from google.ads.googleads.v24.resources.types.asset_set import AssetSet
-from google.ads.googleads.v24.services.services.asset_set_service import (
+from google.ads.googleads.v23.enums.types.asset_set_status import AssetSetStatusEnum
+from google.ads.googleads.v23.enums.types.asset_set_type import AssetSetTypeEnum
+from google.ads.googleads.v23.resources.types.asset_set import AssetSet
+from google.ads.googleads.v23.services.services.asset_set_service import (
     AssetSetServiceClient,
 )
-from google.ads.googleads.v24.services.services.google_ads_service import (
+from google.ads.googleads.v23.services.services.google_ads_service import (
     GoogleAdsServiceClient,
 )
-from google.ads.googleads.v24.services.types.asset_set_service import (
+from google.ads.googleads.v23.services.types.asset_set_service import (
     AssetSetOperation,
     MutateAssetSetsRequest,
     MutateAssetSetsResponse,

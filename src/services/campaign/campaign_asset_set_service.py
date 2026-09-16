@@ -7,16 +7,16 @@ to be linked to campaigns for use in advertising.
 from typing import Any, List, Optional
 
 from fastmcp import FastMCP
-from google.ads.googleads.v24.services.services.campaign_asset_set_service import (
+from google.ads.googleads.v23.services.services.campaign_asset_set_service import (
     CampaignAssetSetServiceClient,
 )
-from google.ads.googleads.v24.services.types.campaign_asset_set_service import (
+from google.ads.googleads.v23.services.types.campaign_asset_set_service import (
     CampaignAssetSetOperation,
     MutateCampaignAssetSetsRequest,
     MutateCampaignAssetSetsResponse,
 )
-from google.ads.googleads.v24.resources.types.campaign_asset_set import CampaignAssetSet
-from google.ads.googleads.v24.enums.types.response_content_type import (
+from google.ads.googleads.v23.resources.types.campaign_asset_set import CampaignAssetSet
+from google.ads.googleads.v23.enums.types.response_content_type import (
     ResponseContentTypeEnum,
 )
 

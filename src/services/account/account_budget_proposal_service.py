@@ -4,23 +4,23 @@ from typing import Any, Awaitable, Callable, Dict, List, Optional
 
 from fastmcp import Context, FastMCP
 from google.ads.googleads.errors import GoogleAdsException
-from google.ads.googleads.v24.enums.types.account_budget_proposal_type import (
+from google.ads.googleads.v23.enums.types.account_budget_proposal_type import (
     AccountBudgetProposalTypeEnum,
 )
-from google.ads.googleads.v24.enums.types.spending_limit_type import (
+from google.ads.googleads.v23.enums.types.spending_limit_type import (
     SpendingLimitTypeEnum,
 )
-from google.ads.googleads.v24.enums.types.time_type import TimeTypeEnum
-from google.ads.googleads.v24.resources.types.account_budget_proposal import (
+from google.ads.googleads.v23.enums.types.time_type import TimeTypeEnum
+from google.ads.googleads.v23.resources.types.account_budget_proposal import (
     AccountBudgetProposal,
 )
-from google.ads.googleads.v24.services.services.account_budget_proposal_service import (
+from google.ads.googleads.v23.services.services.account_budget_proposal_service import (
     AccountBudgetProposalServiceClient,
 )
-from google.ads.googleads.v24.services.services.google_ads_service import (
+from google.ads.googleads.v23.services.services.google_ads_service import (
     GoogleAdsServiceClient,
 )
-from google.ads.googleads.v24.services.types.account_budget_proposal_service import (
+from google.ads.googleads.v23.services.types.account_budget_proposal_service import (
     AccountBudgetProposalOperation,
     MutateAccountBudgetProposalRequest,
     MutateAccountBudgetProposalResponse,

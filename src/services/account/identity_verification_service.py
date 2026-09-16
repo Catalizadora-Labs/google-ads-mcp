@@ -3,15 +3,15 @@
 from typing import Any, Dict, List, Optional, Callable, Awaitable
 
 from fastmcp import Context, FastMCP
-from google.ads.googleads.v24.services.services.identity_verification_service import (
+from google.ads.googleads.v23.services.services.identity_verification_service import (
     IdentityVerificationServiceClient,
 )
-from google.ads.googleads.v24.services.types.identity_verification_service import (
+from google.ads.googleads.v23.services.types.identity_verification_service import (
     StartIdentityVerificationRequest,
     GetIdentityVerificationRequest,
     GetIdentityVerificationResponse,
 )
-from google.ads.googleads.v24.enums.types.identity_verification_program import (
+from google.ads.googleads.v23.enums.types.identity_verification_program import (
     IdentityVerificationProgramEnum,
 )
 from google.ads.googleads.errors import GoogleAdsException

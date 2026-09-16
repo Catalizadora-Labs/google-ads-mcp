@@ -5,13 +5,13 @@ from typing import Any, Awaitable, Callable, Dict, List, Optional
 
 from fastmcp import Context, FastMCP
 from google.ads.googleads.errors import GoogleAdsException
-from google.ads.googleads.v24.common.types.offline_user_data import (
+from google.ads.googleads.v23.common.types.offline_user_data import (
     UserIdentifier,
 )
-from google.ads.googleads.v24.services.services.conversion_upload_service import (
+from google.ads.googleads.v23.services.services.conversion_upload_service import (
     ConversionUploadServiceClient,
 )
-from google.ads.googleads.v24.services.types.conversion_upload_service import (
+from google.ads.googleads.v23.services.types.conversion_upload_service import (
     CallConversion,
     ClickConversion,
     UploadCallConversionsRequest,
