@@ -4,7 +4,7 @@ from typing import Any, Awaitable, Callable, Dict, List, Optional
 
 from fastmcp import Context, FastMCP
 from google.ads.googleads.errors import GoogleAdsException
-from google.ads.googleads.v22.common.types.bidding import (
+from google.ads.googleads.v24.common.types.bidding import (
     ManualCpc,
     MaximizeConversions,
     MaximizeConversionValue,
@@ -13,24 +13,24 @@ from google.ads.googleads.v22.common.types.bidding import (
     TargetRoas,
     TargetSpend,
 )
-from google.ads.googleads.v22.enums.types.advertising_channel_sub_type import (
+from google.ads.googleads.v24.enums.types.advertising_channel_sub_type import (
     AdvertisingChannelSubTypeEnum,
 )
-from google.ads.googleads.v22.enums.types.advertising_channel_type import (
+from google.ads.googleads.v24.enums.types.advertising_channel_type import (
     AdvertisingChannelTypeEnum,
 )
-from google.ads.googleads.v22.enums.types.campaign_experiment_type import (
+from google.ads.googleads.v24.enums.types.campaign_experiment_type import (
     CampaignExperimentTypeEnum,
 )
-from google.ads.googleads.v22.enums.types.campaign_status import CampaignStatusEnum
-from google.ads.googleads.v22.enums.types.eu_political_advertising_status import (
+from google.ads.googleads.v24.enums.types.campaign_status import CampaignStatusEnum
+from google.ads.googleads.v24.enums.types.eu_political_advertising_status import (
     EuPoliticalAdvertisingStatusEnum,
 )
-from google.ads.googleads.v22.resources.types.campaign import Campaign
-from google.ads.googleads.v22.services.services.campaign_service import (
+from google.ads.googleads.v24.resources.types.campaign import Campaign
+from google.ads.googleads.v24.services.services.campaign_service import (
     CampaignServiceClient,
 )
-from google.ads.googleads.v22.services.types.campaign_service import (
+from google.ads.googleads.v24.services.types.campaign_service import (
     CampaignOperation,
     MutateCampaignsRequest,
     MutateCampaignsResponse,

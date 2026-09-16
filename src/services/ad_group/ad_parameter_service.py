@@ -4,16 +4,16 @@ from typing import Any, Awaitable, Callable, Dict, List, Optional
 
 from fastmcp import Context, FastMCP
 from google.ads.googleads.errors import GoogleAdsException
-from google.ads.googleads.v22.enums.types.response_content_type import (
+from google.ads.googleads.v24.enums.types.response_content_type import (
     ResponseContentTypeEnum,
 )
-from google.ads.googleads.v22.resources.types.ad_parameter import (
+from google.ads.googleads.v24.resources.types.ad_parameter import (
     AdParameter,
 )
-from google.ads.googleads.v22.services.services.ad_parameter_service import (
+from google.ads.googleads.v24.services.services.ad_parameter_service import (
     AdParameterServiceClient,
 )
-from google.ads.googleads.v22.services.types.ad_parameter_service import (
+from google.ads.googleads.v24.services.types.ad_parameter_service import (
     AdParameterOperation,
     MutateAdParametersRequest,
     MutateAdParametersResponse,

@@ -3,10 +3,10 @@
 from typing import Any, Dict, List, Optional, Callable, Awaitable
 
 from fastmcp import Context, FastMCP
-from google.ads.googleads.v22.services.services.payments_account_service import (
+from google.ads.googleads.v24.services.services.payments_account_service import (
     PaymentsAccountServiceClient,
 )
-from google.ads.googleads.v22.services.types.payments_account_service import (
+from google.ads.googleads.v24.services.types.payments_account_service import (
     ListPaymentsAccountsRequest,
     ListPaymentsAccountsResponse,
 )

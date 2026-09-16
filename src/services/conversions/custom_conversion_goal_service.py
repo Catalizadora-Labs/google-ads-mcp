@@ -7,19 +7,19 @@ Custom conversion goals allow making arbitrary conversion actions biddable.
 from typing import Any, List, Optional
 
 from fastmcp import FastMCP
-from google.ads.googleads.v22.enums.types.custom_conversion_goal_status import (
+from google.ads.googleads.v24.enums.types.custom_conversion_goal_status import (
     CustomConversionGoalStatusEnum,
 )
-from google.ads.googleads.v22.enums.types.response_content_type import (
+from google.ads.googleads.v24.enums.types.response_content_type import (
     ResponseContentTypeEnum,
 )
-from google.ads.googleads.v22.resources.types.custom_conversion_goal import (
+from google.ads.googleads.v24.resources.types.custom_conversion_goal import (
     CustomConversionGoal,
 )
-from google.ads.googleads.v22.services.services.custom_conversion_goal_service import (
+from google.ads.googleads.v24.services.services.custom_conversion_goal_service import (
     CustomConversionGoalServiceClient,
 )
-from google.ads.googleads.v22.services.types.custom_conversion_goal_service import (
+from google.ads.googleads.v24.services.types.custom_conversion_goal_service import (
     CustomConversionGoalOperation,
     MutateCustomConversionGoalsRequest,
     MutateCustomConversionGoalsResponse,

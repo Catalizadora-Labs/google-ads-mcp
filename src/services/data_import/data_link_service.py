@@ -3,7 +3,7 @@
 from typing import Any, Dict, List, Optional, Callable, Awaitable
 
 from fastmcp import Context, FastMCP
-from google.ads.googleads.v22.services.services.data_link_service import (
+from google.ads.googleads.v24.services.services.data_link_service import (
     DataLinkServiceClient,
 )
 

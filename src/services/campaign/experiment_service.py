@@ -4,16 +4,16 @@ from typing import Any, Awaitable, Callable, Dict, List, Optional
 
 from fastmcp import Context, FastMCP
 from google.ads.googleads.errors import GoogleAdsException
-from google.ads.googleads.v22.enums.types.experiment_status import ExperimentStatusEnum
-from google.ads.googleads.v22.enums.types.experiment_type import ExperimentTypeEnum
-from google.ads.googleads.v22.resources.types.experiment import Experiment
-from google.ads.googleads.v22.services.services.experiment_service import (
+from google.ads.googleads.v24.enums.types.experiment_status import ExperimentStatusEnum
+from google.ads.googleads.v24.enums.types.experiment_type import ExperimentTypeEnum
+from google.ads.googleads.v24.resources.types.experiment import Experiment
+from google.ads.googleads.v24.services.services.experiment_service import (
     ExperimentServiceClient,
 )
-from google.ads.googleads.v22.services.services.google_ads_service import (
+from google.ads.googleads.v24.services.services.google_ads_service import (
     GoogleAdsServiceClient,
 )
-from google.ads.googleads.v22.services.types.experiment_service import (
+from google.ads.googleads.v24.services.types.experiment_service import (
     EndExperimentRequest,
     ExperimentOperation,
     MutateExperimentsRequest,

@@ -3,10 +3,10 @@
 from typing import Any, Dict, List, Optional, Callable, Awaitable
 
 from fastmcp import Context, FastMCP
-from google.ads.googleads.v22.services.services.geo_target_constant_service import (
+from google.ads.googleads.v24.services.services.geo_target_constant_service import (
     GeoTargetConstantServiceClient,
 )
-from google.ads.googleads.v22.services.types.geo_target_constant_service import (
+from google.ads.googleads.v24.services.types.geo_target_constant_service import (
     SuggestGeoTargetConstantsRequest,
     SuggestGeoTargetConstantsResponse,
 )

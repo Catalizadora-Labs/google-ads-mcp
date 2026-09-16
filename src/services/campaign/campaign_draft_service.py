@@ -3,20 +3,20 @@
 from typing import Any, Dict, List, Optional, Callable, Awaitable
 
 from fastmcp import Context, FastMCP
-from google.ads.googleads.v22.services.services.campaign_draft_service import (
+from google.ads.googleads.v24.services.services.campaign_draft_service import (
     CampaignDraftServiceClient,
 )
-from google.ads.googleads.v22.services.types.campaign_draft_service import (
+from google.ads.googleads.v24.services.types.campaign_draft_service import (
     MutateCampaignDraftsRequest,
     MutateCampaignDraftsResponse,
     CampaignDraftOperation,
     ListCampaignDraftAsyncErrorsRequest,
     PromoteCampaignDraftRequest,
 )
-from google.ads.googleads.v22.resources.types.campaign_draft import CampaignDraft
+from google.ads.googleads.v24.resources.types.campaign_draft import CampaignDraft
 from google.ads.googleads.errors import GoogleAdsException
 
-from google.ads.googleads.v22.services.services.google_ads_service import (
+from google.ads.googleads.v24.services.services.google_ads_service import (
     GoogleAdsServiceClient,
 )
 from google.protobuf import field_mask_pb2

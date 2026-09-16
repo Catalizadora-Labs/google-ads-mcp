@@ -4,10 +4,10 @@ from typing import Any, Awaitable, Callable, Dict, List, Optional
 
 from fastmcp import Context, FastMCP
 from google.ads.googleads.errors import GoogleAdsException
-from google.ads.googleads.v22.services.services.google_ads_service import (
+from google.ads.googleads.v24.services.services.google_ads_service import (
     GoogleAdsServiceClient,
 )
-from google.ads.googleads.v22.services.types.google_ads_service import (
+from google.ads.googleads.v24.services.types.google_ads_service import (
     GoogleAdsRow,
     SearchGoogleAdsRequest,
 )
@@ -294,7 +294,7 @@ class SearchService:
             request = SearchGoogleAdsRequest()
             request.customer_id = customer_id
             request.query = query
-            request.page_size = page_size
+            pass  # NO mandar page_size: desde la API v22 Google contesta «Setting the page size is not supported» (16-sep-2026); el parámetro queda por compatibilidad y se ignora
 
             # Execute search
             response = self.client.search(request=request)

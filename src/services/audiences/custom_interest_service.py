@@ -4,26 +4,26 @@ from typing import Any, Awaitable, Callable, Dict, List, Optional
 
 from fastmcp import Context, FastMCP
 from google.ads.googleads.errors import GoogleAdsException
-from google.ads.googleads.v22.enums.types.custom_interest_member_type import (
+from google.ads.googleads.v24.enums.types.custom_interest_member_type import (
     CustomInterestMemberTypeEnum,
 )
-from google.ads.googleads.v22.enums.types.custom_interest_status import (
+from google.ads.googleads.v24.enums.types.custom_interest_status import (
     CustomInterestStatusEnum,
 )
-from google.ads.googleads.v22.enums.types.custom_interest_type import (
+from google.ads.googleads.v24.enums.types.custom_interest_type import (
     CustomInterestTypeEnum,
 )
-from google.ads.googleads.v22.resources.types.custom_interest import (
+from google.ads.googleads.v24.resources.types.custom_interest import (
     CustomInterest,
     CustomInterestMember,
 )
-from google.ads.googleads.v22.services.services.custom_interest_service import (
+from google.ads.googleads.v24.services.services.custom_interest_service import (
     CustomInterestServiceClient,
 )
-from google.ads.googleads.v22.services.services.google_ads_service import (
+from google.ads.googleads.v24.services.services.google_ads_service import (
     GoogleAdsServiceClient,
 )
-from google.ads.googleads.v22.services.types.custom_interest_service import (
+from google.ads.googleads.v24.services.types.custom_interest_service import (
     CustomInterestOperation,
     MutateCustomInterestsRequest,
     MutateCustomInterestsResponse,

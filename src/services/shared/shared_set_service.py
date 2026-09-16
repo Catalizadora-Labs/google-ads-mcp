@@ -4,19 +4,19 @@ from typing import Any, Awaitable, Callable, Dict, List, Optional
 
 from fastmcp import Context, FastMCP
 from google.ads.googleads.errors import GoogleAdsException
-from google.ads.googleads.v22.enums.types.shared_set_status import SharedSetStatusEnum
-from google.ads.googleads.v22.enums.types.shared_set_type import SharedSetTypeEnum
-from google.ads.googleads.v22.resources.types.shared_set import SharedSet
-from google.ads.googleads.v22.services.services.google_ads_service import (
+from google.ads.googleads.v24.enums.types.shared_set_status import SharedSetStatusEnum
+from google.ads.googleads.v24.enums.types.shared_set_type import SharedSetTypeEnum
+from google.ads.googleads.v24.resources.types.shared_set import SharedSet
+from google.ads.googleads.v24.services.services.google_ads_service import (
     GoogleAdsServiceClient,
 )
-from google.ads.googleads.v22.services.services.shared_set_service import (
+from google.ads.googleads.v24.services.services.shared_set_service import (
     SharedSetServiceClient,
 )
-from google.ads.googleads.v22.services.services.campaign_shared_set_service import (
+from google.ads.googleads.v24.services.services.campaign_shared_set_service import (
     CampaignSharedSetServiceClient,
 )
-from google.ads.googleads.v22.services.types.shared_set_service import (
+from google.ads.googleads.v24.services.types.shared_set_service import (
     MutateSharedSetsRequest,
     MutateSharedSetsResponse,
     SharedSetOperation,
@@ -282,10 +282,10 @@ class SharedSetService:
                 sdk_client.client.get_service("CampaignSharedSetService", version="v22")
             )
 
-            from google.ads.googleads.v22.resources.types.campaign_shared_set import (
+            from google.ads.googleads.v24.resources.types.campaign_shared_set import (
                 CampaignSharedSet,
             )
-            from google.ads.googleads.v22.services.types.campaign_shared_set_service import (
+            from google.ads.googleads.v24.services.types.campaign_shared_set_service import (
                 CampaignSharedSetOperation,
                 MutateCampaignSharedSetsRequest,
             )

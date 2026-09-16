@@ -6,10 +6,10 @@ from fastmcp import Context, FastMCP
 
 # Note: Value rule types may not be available in v20 - using simplified implementation
 from google.ads.googleads.errors import GoogleAdsException
-from google.ads.googleads.v22.services.services.conversion_value_rule_service import (
+from google.ads.googleads.v24.services.services.conversion_value_rule_service import (
     ConversionValueRuleServiceClient,
 )
-from google.ads.googleads.v22.services.services.google_ads_service import (
+from google.ads.googleads.v24.services.services.google_ads_service import (
     GoogleAdsServiceClient,
 )
 

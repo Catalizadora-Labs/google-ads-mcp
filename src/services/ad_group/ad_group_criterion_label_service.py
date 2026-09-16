@@ -7,13 +7,13 @@ organization and management of targeting criteria.
 from typing import Any, List, Optional
 
 from fastmcp import FastMCP
-from google.ads.googleads.v22.resources.types.ad_group_criterion_label import (
+from google.ads.googleads.v24.resources.types.ad_group_criterion_label import (
     AdGroupCriterionLabel,
 )
-from google.ads.googleads.v22.services.services.ad_group_criterion_label_service import (
+from google.ads.googleads.v24.services.services.ad_group_criterion_label_service import (
     AdGroupCriterionLabelServiceClient,
 )
-from google.ads.googleads.v22.services.types.ad_group_criterion_label_service import (
+from google.ads.googleads.v24.services.types.ad_group_criterion_label_service import (
     AdGroupCriterionLabelOperation,
     MutateAdGroupCriterionLabelsRequest,
     MutateAdGroupCriterionLabelsResponse,

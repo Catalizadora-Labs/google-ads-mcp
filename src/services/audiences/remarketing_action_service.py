@@ -4,16 +4,16 @@ from typing import Any, Awaitable, Callable, Dict, List, Optional
 
 from fastmcp import Context, FastMCP
 from google.ads.googleads.errors import GoogleAdsException
-from google.ads.googleads.v22.resources.types.remarketing_action import (
+from google.ads.googleads.v24.resources.types.remarketing_action import (
     RemarketingAction,
 )
-from google.ads.googleads.v22.services.services.remarketing_action_service import (
+from google.ads.googleads.v24.services.services.remarketing_action_service import (
     RemarketingActionServiceClient,
 )
-from google.ads.googleads.v22.services.services.google_ads_service import (
+from google.ads.googleads.v24.services.services.google_ads_service import (
     GoogleAdsServiceClient,
 )
-from google.ads.googleads.v22.services.types.remarketing_action_service import (
+from google.ads.googleads.v24.services.types.remarketing_action_service import (
     MutateRemarketingActionsRequest,
     MutateRemarketingActionsResponse,
     RemarketingActionOperation,

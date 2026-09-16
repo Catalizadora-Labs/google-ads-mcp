@@ -7,20 +7,20 @@ Signals help Performance Max campaigns identify users most likely to convert.
 from typing import Any, List, Optional
 
 from fastmcp import FastMCP
-from google.ads.googleads.v22.services.services.asset_group_signal_service import (
+from google.ads.googleads.v24.services.services.asset_group_signal_service import (
     AssetGroupSignalServiceClient,
 )
-from google.ads.googleads.v22.services.types.asset_group_signal_service import (
+from google.ads.googleads.v24.services.types.asset_group_signal_service import (
     AssetGroupSignalOperation,
     MutateAssetGroupSignalsRequest,
     MutateAssetGroupSignalsResponse,
 )
-from google.ads.googleads.v22.resources.types.asset_group_signal import AssetGroupSignal
-from google.ads.googleads.v22.enums.types.response_content_type import (
+from google.ads.googleads.v24.resources.types.asset_group_signal import AssetGroupSignal
+from google.ads.googleads.v24.enums.types.response_content_type import (
     ResponseContentTypeEnum,
 )
-from google.ads.googleads.v22.common.types.criteria import AudienceInfo, SearchThemeInfo
-from google.ads.googleads.v22.common.types.policy import PolicyViolationKey
+from google.ads.googleads.v24.common.types.criteria import AudienceInfo, SearchThemeInfo
+from google.ads.googleads.v24.common.types.policy import PolicyViolationKey
 
 from src.utils import resolve_enum
 from src.sdk_client import get_sdk_client

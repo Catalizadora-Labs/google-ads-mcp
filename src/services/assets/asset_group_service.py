@@ -4,15 +4,15 @@ from typing import Any, Awaitable, Callable, Dict, List, Optional
 
 from fastmcp import Context, FastMCP
 from google.ads.googleads.errors import GoogleAdsException
-from google.ads.googleads.v22.enums.types.asset_group_status import AssetGroupStatusEnum
-from google.ads.googleads.v22.resources.types.asset_group import AssetGroup
-from google.ads.googleads.v22.services.services.asset_group_service import (
+from google.ads.googleads.v24.enums.types.asset_group_status import AssetGroupStatusEnum
+from google.ads.googleads.v24.resources.types.asset_group import AssetGroup
+from google.ads.googleads.v24.services.services.asset_group_service import (
     AssetGroupServiceClient,
 )
-from google.ads.googleads.v22.services.services.google_ads_service import (
+from google.ads.googleads.v24.services.services.google_ads_service import (
     GoogleAdsServiceClient,
 )
-from google.ads.googleads.v22.services.types.asset_group_service import (
+from google.ads.googleads.v24.services.types.asset_group_service import (
     AssetGroupOperation,
     MutateAssetGroupsRequest,
     MutateAssetGroupsResponse,

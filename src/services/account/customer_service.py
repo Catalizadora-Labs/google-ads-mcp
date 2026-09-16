@@ -4,11 +4,11 @@ from typing import Any, Awaitable, Callable, Dict, List, Optional
 
 from fastmcp import Context, FastMCP
 from google.ads.googleads.errors import GoogleAdsException
-from google.ads.googleads.v22.resources.types.customer import Customer
-from google.ads.googleads.v22.services.services.customer_service import (
+from google.ads.googleads.v24.resources.types.customer import Customer
+from google.ads.googleads.v24.services.services.customer_service import (
     CustomerServiceClient,
 )
-from google.ads.googleads.v22.services.types.customer_service import (
+from google.ads.googleads.v24.services.types.customer_service import (
     CreateCustomerClientRequest,
     CreateCustomerClientResponse,
     ListAccessibleCustomersRequest,

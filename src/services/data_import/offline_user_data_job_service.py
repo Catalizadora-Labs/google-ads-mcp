@@ -4,24 +4,24 @@ from typing import Any, Awaitable, Callable, Dict, List, Optional
 
 from fastmcp import Context, FastMCP
 from google.ads.googleads.errors import GoogleAdsException
-from google.ads.googleads.v22.common.types.offline_user_data import (
+from google.ads.googleads.v24.common.types.offline_user_data import (
     OfflineUserAddressInfo,
     UserData,
     UserIdentifier,
 )
-from google.ads.googleads.v22.enums.types.offline_user_data_job_type import (
+from google.ads.googleads.v24.enums.types.offline_user_data_job_type import (
     OfflineUserDataJobTypeEnum,
 )
-from google.ads.googleads.v22.resources.types.offline_user_data_job import (
+from google.ads.googleads.v24.resources.types.offline_user_data_job import (
     OfflineUserDataJob,
 )
-from google.ads.googleads.v22.services.services.offline_user_data_job_service import (
+from google.ads.googleads.v24.services.services.offline_user_data_job_service import (
     OfflineUserDataJobServiceClient,
 )
-from google.ads.googleads.v22.services.services.google_ads_service import (
+from google.ads.googleads.v24.services.services.google_ads_service import (
     GoogleAdsServiceClient,
 )
-from google.ads.googleads.v22.services.types.offline_user_data_job_service import (
+from google.ads.googleads.v24.services.types.offline_user_data_job_service import (
     AddOfflineUserDataJobOperationsRequest,
     AddOfflineUserDataJobOperationsResponse,
     CreateOfflineUserDataJobRequest,

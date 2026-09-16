@@ -4,26 +4,26 @@ from typing import Any, Awaitable, Callable, Dict, List, Optional
 
 from fastmcp import Context, FastMCP
 from google.ads.googleads.errors import GoogleAdsException
-from google.ads.googleads.v22.enums.types.account_link_status import (
+from google.ads.googleads.v24.enums.types.account_link_status import (
     AccountLinkStatusEnum,
 )
-from google.ads.googleads.v22.enums.types.linked_account_type import (
+from google.ads.googleads.v24.enums.types.linked_account_type import (
     LinkedAccountTypeEnum,
 )
-from google.ads.googleads.v22.enums.types.mobile_app_vendor import (
+from google.ads.googleads.v24.enums.types.mobile_app_vendor import (
     MobileAppVendorEnum,
 )
-from google.ads.googleads.v22.resources.types.account_link import (
+from google.ads.googleads.v24.resources.types.account_link import (
     AccountLink,
     ThirdPartyAppAnalyticsLinkIdentifier,
 )
-from google.ads.googleads.v22.services.services.account_link_service import (
+from google.ads.googleads.v24.services.services.account_link_service import (
     AccountLinkServiceClient,
 )
-from google.ads.googleads.v22.services.services.google_ads_service import (
+from google.ads.googleads.v24.services.services.google_ads_service import (
     GoogleAdsServiceClient,
 )
-from google.ads.googleads.v22.services.types.account_link_service import (
+from google.ads.googleads.v24.services.types.account_link_service import (
     AccountLinkOperation,
     CreateAccountLinkRequest,
     CreateAccountLinkResponse,

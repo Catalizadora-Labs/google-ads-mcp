@@ -4,20 +4,20 @@ from typing import Any, Awaitable, Callable, Dict, List, Optional
 
 from fastmcp import Context, FastMCP
 from google.ads.googleads.errors import GoogleAdsException
-from google.ads.googleads.v22.common.types.customizer_value import CustomizerValue
-from google.ads.googleads.v22.enums.types.customizer_attribute_type import (
+from google.ads.googleads.v24.common.types.customizer_value import CustomizerValue
+from google.ads.googleads.v24.enums.types.customizer_attribute_type import (
     CustomizerAttributeTypeEnum,
 )
-from google.ads.googleads.v22.enums.types.response_content_type import (
+from google.ads.googleads.v24.enums.types.response_content_type import (
     ResponseContentTypeEnum,
 )
-from google.ads.googleads.v22.resources.types.campaign_customizer import (
+from google.ads.googleads.v24.resources.types.campaign_customizer import (
     CampaignCustomizer,
 )
-from google.ads.googleads.v22.services.services.campaign_customizer_service import (
+from google.ads.googleads.v24.services.services.campaign_customizer_service import (
     CampaignCustomizerServiceClient,
 )
-from google.ads.googleads.v22.services.types.campaign_customizer_service import (
+from google.ads.googleads.v24.services.types.campaign_customizer_service import (
     CampaignCustomizerOperation,
     MutateCampaignCustomizersRequest,
     MutateCampaignCustomizersResponse,

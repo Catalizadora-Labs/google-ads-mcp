@@ -4,16 +4,16 @@ from typing import Any, Awaitable, Callable, Dict, List, Optional
 
 from fastmcp import Context, FastMCP
 from google.ads.googleads.errors import GoogleAdsException
-from google.ads.googleads.v22.enums.types.ad_group_ad_status import AdGroupAdStatusEnum
-from google.ads.googleads.v22.resources.types.ad import Ad
-from google.ads.googleads.v22.resources.types.ad_group_ad import AdGroupAd
-from google.ads.googleads.v22.services.services.ad_group_ad_service import (
+from google.ads.googleads.v24.enums.types.ad_group_ad_status import AdGroupAdStatusEnum
+from google.ads.googleads.v24.resources.types.ad import Ad
+from google.ads.googleads.v24.resources.types.ad_group_ad import AdGroupAd
+from google.ads.googleads.v24.services.services.ad_group_ad_service import (
     AdGroupAdServiceClient,
 )
-from google.ads.googleads.v22.services.services.google_ads_service import (
+from google.ads.googleads.v24.services.services.google_ads_service import (
     GoogleAdsServiceClient,
 )
-from google.ads.googleads.v22.services.types.ad_group_ad_service import (
+from google.ads.googleads.v24.services.types.ad_group_ad_service import (
     AdGroupAdOperation,
     MutateAdGroupAdsRequest,
     MutateAdGroupAdsResponse,

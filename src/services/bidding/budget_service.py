@@ -4,14 +4,14 @@ from typing import Any, Awaitable, Callable, Dict, List, Optional
 
 from fastmcp import Context, FastMCP
 from google.ads.googleads.errors import GoogleAdsException
-from google.ads.googleads.v22.enums.types.budget_delivery_method import (
+from google.ads.googleads.v24.enums.types.budget_delivery_method import (
     BudgetDeliveryMethodEnum,
 )
-from google.ads.googleads.v22.resources.types.campaign_budget import CampaignBudget
-from google.ads.googleads.v22.services.services.campaign_budget_service import (
+from google.ads.googleads.v24.resources.types.campaign_budget import CampaignBudget
+from google.ads.googleads.v24.services.services.campaign_budget_service import (
     CampaignBudgetServiceClient,
 )
-from google.ads.googleads.v22.services.types.campaign_budget_service import (
+from google.ads.googleads.v24.services.types.campaign_budget_service import (
     CampaignBudgetOperation,
     MutateCampaignBudgetsRequest,
     MutateCampaignBudgetsResponse,

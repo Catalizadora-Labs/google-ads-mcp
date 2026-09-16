@@ -9,18 +9,18 @@ from typing import Any, Awaitable, Callable, Dict, List, Optional
 
 from fastmcp import Context, FastMCP
 from google.ads.googleads.errors import GoogleAdsException
-from google.ads.googleads.v22.common.types.criteria import InteractionTypeInfo
-from google.ads.googleads.v22.enums.types.interaction_type import InteractionTypeEnum
-from google.ads.googleads.v22.resources.types.campaign_bid_modifier import (
+from google.ads.googleads.v24.common.types.criteria import InteractionTypeInfo
+from google.ads.googleads.v24.enums.types.interaction_type import InteractionTypeEnum
+from google.ads.googleads.v24.resources.types.campaign_bid_modifier import (
     CampaignBidModifier,
 )
-from google.ads.googleads.v22.services.services.campaign_bid_modifier_service import (
+from google.ads.googleads.v24.services.services.campaign_bid_modifier_service import (
     CampaignBidModifierServiceClient,
 )
-from google.ads.googleads.v22.services.services.google_ads_service import (
+from google.ads.googleads.v24.services.services.google_ads_service import (
     GoogleAdsServiceClient,
 )
-from google.ads.googleads.v22.services.types.campaign_bid_modifier_service import (
+from google.ads.googleads.v24.services.types.campaign_bid_modifier_service import (
     CampaignBidModifierOperation,
     MutateCampaignBidModifiersRequest,
     MutateCampaignBidModifiersResponse,

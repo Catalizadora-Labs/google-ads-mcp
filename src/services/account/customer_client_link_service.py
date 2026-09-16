@@ -4,19 +4,19 @@ from typing import Any, Awaitable, Callable, Dict, List, Optional
 
 from fastmcp import Context, FastMCP
 from google.ads.googleads.errors import GoogleAdsException
-from google.ads.googleads.v22.enums.types.manager_link_status import (
+from google.ads.googleads.v24.enums.types.manager_link_status import (
     ManagerLinkStatusEnum,
 )
-from google.ads.googleads.v22.resources.types.customer_client_link import (
+from google.ads.googleads.v24.resources.types.customer_client_link import (
     CustomerClientLink,
 )
-from google.ads.googleads.v22.services.services.customer_client_link_service import (
+from google.ads.googleads.v24.services.services.customer_client_link_service import (
     CustomerClientLinkServiceClient,
 )
-from google.ads.googleads.v22.services.services.google_ads_service import (
+from google.ads.googleads.v24.services.services.google_ads_service import (
     GoogleAdsServiceClient,
 )
-from google.ads.googleads.v22.services.types.customer_client_link_service import (
+from google.ads.googleads.v24.services.types.customer_client_link_service import (
     CustomerClientLinkOperation,
     MutateCustomerClientLinkRequest,
     MutateCustomerClientLinkResponse,
