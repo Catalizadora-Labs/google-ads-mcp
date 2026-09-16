@@ -464,7 +464,12 @@ async def run_with_shutdown():
         f"Registered tools: {len(tools)} tools from {len(servers_to_mount)} servers"
     )
     # Create a task for the server
-    server_task = asyncio.create_task(mcp.run_async(transport="stdio"))
+    import os as _os
+    _tp = _os.environ.get("MCP_TRANSPORT", "stdio")
+    if _tp == "stdio":
+        server_task = asyncio.create_task(mcp.run_async(transport="stdio"))
+    else:
+        server_task = asyncio.create_task(mcp.run_async(transport=_tp, host=_os.environ.get("MCP_HOST", "127.0.0.1"), port=int(_os.environ.get("MCP_PORT", "8000"))))
 
     # Wait for either the server to complete or shutdown signal
     shutdown_task = asyncio.create_task(shutdown_event.wait())

@@ -3,32 +3,32 @@
 from typing import Any, Dict, List, Optional, Callable, Awaitable
 
 from fastmcp import Context, FastMCP
-from google.ads.googleads.v20.services.services.audience_insights_service import (
+from google.ads.googleads.v22.services.services.audience_insights_service import (
     AudienceInsightsServiceClient,
 )
-from google.ads.googleads.v20.services.types.audience_insights_service import (
+from google.ads.googleads.v22.services.types.audience_insights_service import (
     GenerateInsightsFinderReportRequest,
     GenerateInsightsFinderReportResponse,
     GenerateAudienceCompositionInsightsRequest,
     GenerateAudienceCompositionInsightsResponse,
     GenerateSuggestedTargetingInsightsRequest,
     GenerateSuggestedTargetingInsightsResponse,
-    BasicInsightsAudience,
+    InsightsAudience,
     InsightsAudience,
     InsightsAudienceAttributeGroup,
     InsightsAudienceDefinition,
 )
-from google.ads.googleads.v20.common.types.criteria import (
+from google.ads.googleads.v22.common.types.criteria import (
     AgeRangeInfo,
     GenderInfo,
     LocationInfo,
     UserInterestInfo,
 )
-from google.ads.googleads.v20.enums.types.audience_insights_dimension import (
+from google.ads.googleads.v22.enums.types.audience_insights_dimension import (
     AudienceInsightsDimensionEnum,
 )
-from google.ads.googleads.v20.enums.types.age_range_type import AgeRangeTypeEnum
-from google.ads.googleads.v20.enums.types.gender_type import GenderTypeEnum
+from google.ads.googleads.v22.enums.types.age_range_type import AgeRangeTypeEnum
+from google.ads.googleads.v22.enums.types.gender_type import GenderTypeEnum
 from google.ads.googleads.errors import GoogleAdsException
 
 from src.sdk_client import get_sdk_client
@@ -56,7 +56,7 @@ class AudienceInsightsService:
         if self._client is None:
             sdk_client = get_sdk_client()
             self._client = sdk_client.client.get_service(
-                "AudienceInsightsService", version="v20"
+                "AudienceInsightsService", version="v22"
             )
         assert self._client is not None
         return self._client
@@ -95,7 +95,7 @@ class AudienceInsightsService:
             customer_id = format_customer_id(customer_id)
 
             # Create baseline audience
-            baseline_audience = BasicInsightsAudience()
+            baseline_audience = InsightsAudience()
 
             # Add countries
             for country_id in baseline_audience_countries:
@@ -112,7 +112,7 @@ class AudienceInsightsService:
                     )
                     baseline_audience.age_ranges.append(age_info)
 
-            # Add gender if provided (BasicInsightsAudience only supports one gender)
+            # Add gender if provided (InsightsAudience only supports one gender)
             if baseline_audience_genders and len(baseline_audience_genders) > 0:
                 gender_info = GenderInfo()
                 gender_info.type_ = getattr(
@@ -120,8 +120,8 @@ class AudienceInsightsService:
                 )
                 baseline_audience.gender = gender_info
 
-            # Create specific audience (also BasicInsightsAudience)
-            specific_audience = BasicInsightsAudience()
+            # Create specific audience (also InsightsAudience)
+            specific_audience = InsightsAudience()
 
             # Add countries
             for country_id in specific_audience_countries:
@@ -138,7 +138,7 @@ class AudienceInsightsService:
                     )
                     specific_audience.age_ranges.append(age_info)
 
-            # Add gender if provided (BasicInsightsAudience only supports one gender)
+            # Add gender if provided (InsightsAudience only supports one gender)
             if specific_audience_genders and len(specific_audience_genders) > 0:
                 gender_info = GenderInfo()
                 gender_info.type_ = getattr(
