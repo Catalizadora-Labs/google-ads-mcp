@@ -52,7 +52,7 @@ class KeywordPlanService:
         if self._client is None:
             sdk_client = get_sdk_client()
             self._client = sdk_client.client.get_service(
-                "KeywordPlanService", version="v22"
+                "KeywordPlanService", version="v23"
             )
         assert self._client is not None
         return self._client
@@ -241,7 +241,7 @@ class KeywordPlanService:
             sdk_client = get_sdk_client()
             campaign_service: KeywordPlanCampaignServiceClient = (
                 sdk_client.client.get_service(
-                    "KeywordPlanCampaignService", version="v22"
+                    "KeywordPlanCampaignService", version="v23"
                 )
             )
 
@@ -331,7 +331,7 @@ class KeywordPlanService:
             sdk_client = get_sdk_client()
             keyword_service: KeywordPlanAdGroupKeywordServiceClient = (
                 sdk_client.client.get_service(
-                    "KeywordPlanAdGroupKeywordService", version="v22"
+                    "KeywordPlanAdGroupKeywordService", version="v23"
                 )
             )
 

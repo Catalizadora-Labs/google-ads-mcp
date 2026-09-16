@@ -48,7 +48,7 @@ class SharedSetService:
         if self._client is None:
             sdk_client = get_sdk_client()
             self._client = sdk_client.client.get_service(
-                "SharedSetService", version="v22"
+                "SharedSetService", version="v23"
             )
         assert self._client is not None
         return self._client
@@ -279,7 +279,7 @@ class SharedSetService:
             # Use CampaignSharedSetService
             sdk_client = get_sdk_client()
             campaign_shared_set_service: CampaignSharedSetServiceClient = (
-                sdk_client.client.get_service("CampaignSharedSetService", version="v22")
+                sdk_client.client.get_service("CampaignSharedSetService", version="v23")
             )
 
             from google.ads.googleads.v23.resources.types.campaign_shared_set import (

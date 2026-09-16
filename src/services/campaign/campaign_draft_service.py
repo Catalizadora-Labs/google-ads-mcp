@@ -45,7 +45,7 @@ class CampaignDraftService:
         if self._client is None:
             sdk_client = get_sdk_client()
             self._client = sdk_client.client.get_service(
-                "CampaignDraftService", version="v22"
+                "CampaignDraftService", version="v23"
             )
         assert self._client is not None
         return self._client

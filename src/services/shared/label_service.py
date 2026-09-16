@@ -50,7 +50,7 @@ class LabelService:
         """Get the label service client."""
         if self._client is None:
             sdk_client = get_sdk_client()
-            self._client = sdk_client.client.get_service("LabelService", version="v22")
+            self._client = sdk_client.client.get_service("LabelService", version="v23")
         assert self._client is not None
         return self._client
 
@@ -292,7 +292,7 @@ class LabelService:
             # Use CampaignLabelService
             sdk_client = get_sdk_client()
             campaign_label_service: CampaignLabelServiceClient = (
-                sdk_client.client.get_service("CampaignLabelService", version="v22")
+                sdk_client.client.get_service("CampaignLabelService", version="v23")
             )
 
             from google.ads.googleads.v23.resources.types.campaign_label import (
@@ -370,7 +370,7 @@ class LabelService:
             # Use AdGroupLabelService
             sdk_client = get_sdk_client()
             ad_group_label_service: AdGroupLabelServiceClient = (
-                sdk_client.client.get_service("AdGroupLabelService", version="v22")
+                sdk_client.client.get_service("AdGroupLabelService", version="v23")
             )
 
             from google.ads.googleads.v23.resources.types.ad_group_label import (

@@ -49,7 +49,7 @@ class CampaignCriterionService:
         if self._client is None:
             sdk_client = get_sdk_client()
             self._client = sdk_client.client.get_service(
-                "CampaignCriterionService", version="v22"
+                "CampaignCriterionService", version="v23"
             )
         assert self._client is not None
         return self._client

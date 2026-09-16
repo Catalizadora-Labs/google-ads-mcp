@@ -48,7 +48,7 @@ class CustomerCustomizerService:
         if self._client is None:
             sdk_client = get_sdk_client()
             self._client = sdk_client.client.get_service(
-                "CustomerCustomizerService", version="v22"
+                "CustomerCustomizerService", version="v23"
             )
         assert self._client is not None
         return self._client

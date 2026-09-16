@@ -51,7 +51,7 @@ class CustomizerAttributeService:
         if self._client is None:
             sdk_client = get_sdk_client()
             self._client = sdk_client.client.get_service(
-                "CustomizerAttributeService", version="v22"
+                "CustomizerAttributeService", version="v23"
             )
         assert self._client is not None
         return self._client
